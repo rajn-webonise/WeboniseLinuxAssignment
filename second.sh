@@ -1,5 +1,11 @@
+#!/bin/bash
+
 for i in *.txt*
 do
-  mv "$i" "renamed.txt"
+  mv "$i" "${i}_renamed.txt"
 done
-ls *.txt
+
+for i in *.txt*
+do
+  echo $i
+done
